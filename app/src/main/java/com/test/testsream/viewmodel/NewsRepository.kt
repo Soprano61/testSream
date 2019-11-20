@@ -1,7 +1,7 @@
 package com.test.testsream.viewmodel
 
 import android.arch.lifecycle.MutableLiveData
-import com.test.testsream.model.News
+import com.test.testsream.model.Multimedium
 import com.test.testsream.model.NewsResult
 import com.test.testsream.networking.RestApiService
 import kotlinx.coroutines.*
@@ -24,10 +24,10 @@ class NewsRepository() {
             withContext(Dispatchers.Main) {
                 try {
 
-                    val response = request.await()
-                    val mNewsWrapper = response
+                    val response = request
+                    val mNewsWrapper = response.await()
                     if (mNewsWrapper != null && mNewsWrapper.results != null) {
-                      //  movies = mNewsWrapper.results as MutableList<News>
+                        movies = mNewsWrapper.results as MutableList<NewsResult>
                         mutableLiveData.value=movies
                     }
 
@@ -36,6 +36,7 @@ class NewsRepository() {
 
                 } catch (e: Throwable) {
                     // Log error //)
+                    val s = e
                 }
             }
         }

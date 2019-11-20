@@ -32,11 +32,9 @@ data class NewsResult (
     @Json(name="kicker")
     val kicker: String? = null,
     @Json(name="des_facet")
-    val des_facet: String? = null,
+    val desFacet: List<String>? = null,
     @Json(name="short_url")
     val shortUrl: String? = null,
-    @Json(name="des_facet")
-    val desFacet: List<String>? = null,
     @Json(name="org_facet")
     val orgFacet: List<String>? = null,
     @Json(name="per_facet")

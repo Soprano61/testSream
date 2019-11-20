@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     fun getPopularNews() {
         swiperefresh.setRefreshing(false)
-        mainViewModel!!.allBlog.observe(this, Observer {  newsList ->
+        mainViewModel!!.allNews.observe(this, Observer {  newsList ->
             prepareRecyclerView(newsList)
         })
 

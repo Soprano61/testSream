@@ -6,23 +6,20 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 
 data class Multimedium (
-
     @Json(name="url")
     val url: String? = null,
     @Json(name="format")
     val format: String? = null,
     @Json(name="height")
-    val height: String? = null,
+    val height: Int? = null,
     @Json(name="width")
-    val width: String? = null,
+    val width: Int? = null,
     @Json(name="type")
-    val type: Int? = null,
+    val type: String? = null,
     @Json(name="subtype")
-    val subtype: Int? = null,
+    val subtype: String? = null,
     @Json(name="caption")
-    val caption: Int? = null,
+    val caption: String? = null,
     @Json(name="copyright")
-    val copyright: Int? = null,
-    @Json(name="results")
-    val results: List<NewsResult>? = null
+    val copyright: String? = null
 )
