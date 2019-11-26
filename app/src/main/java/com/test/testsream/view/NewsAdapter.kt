@@ -16,7 +16,7 @@ import com.test.testsream.model.News
 import com.test.testsream.model.NewsResult
 
 
-class NewsAdapter(val newsList: List<NewsResult>?) :
+class NewsAdapter(private val newsList: List<NewsResult>?) :
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
 
     override fun getItemCount() = newsList!!.size

@@ -17,8 +17,8 @@ interface RestApiService {
     fun getNowWeather(@Path("section") id: String? = "", @Query("api-key") key: String): Deferred <News>
 
     companion object {
-        val LOG = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-        fun createCorService(): RestApiService {
+        private val LOG = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+        fun createService(): RestApiService {
 
             val okHttpClient = OkHttpClient.Builder()
                 .addInterceptor(LOG)

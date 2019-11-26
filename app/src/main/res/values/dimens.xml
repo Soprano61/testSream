@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_half">8dp</dimen>
+    <dimen name="padding_min">4dp</dimen>
+    <dimen name="padding_midle">6dp</dimen>
+    <dimen name="zero">0dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="com_facebook_auth_dialog_corner_radius_oversized">4dp</dimen>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_double">32dp</dimen>
+
+    <dimen name="divider_height">4dp</dimen>
+    <dimen name="divider_height_half_sub">-2dp</dimen>
+
+    <!-- Font-->
+    <dimen name="font_shall">12sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_medium_again">17sp</dimen>
+    <dimen name="font_litle">5sp</dimen>
+    <dimen name="view_header_avatar_size">70dp</dimen>
+
+    <dimen name="font_normal">18sp</dimen>
+    <dimen name="font_big">20sp</dimen>
+    <dimen name="font_hug">24sp</dimen>
+    <dimen name="font_very_hug">36sp</dimen>
+
+    <dimen name="badge_size">25dp</dimen>
+    <dimen name="bought_icon_size">120dp</dimen>
+    <dimen name="add_mark_template">38dp</dimen>
+    <dimen name="mark_radius">48dp</dimen>
+    <dimen name="mark_radius_image">60dp</dimen>
+    <dimen name="mark_radius_amount">78dp</dimen>
+    <dimen name="mark_radius_midle_size">68dp</dimen>
+    
+</resources>

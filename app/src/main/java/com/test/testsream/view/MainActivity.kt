@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
 
-    var mainViewModel: MainViewModel? = null
+    lateinit var mainViewModel: MainViewModel
     var mNewsAdapter: NewsAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,10 +30,11 @@ class MainActivity : AppCompatActivity() {
 
     fun getPopularNews() {
         swiperefresh.setRefreshing(false)
-        mainViewModel!!.allNews.observe(this, Observer {  newsList ->
-            prepareRecyclerView(newsList)
-        })
-
+        mainViewModel.let {
+            it.allNews.observe(this, Observer { newsList ->
+                prepareRecyclerView(newsList)
+            })
+        }
     }
 
     private fun prepareRecyclerView(newsList: List<NewsResult>?) {
